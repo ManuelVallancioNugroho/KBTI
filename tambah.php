@@ -1,6 +1,6 @@
 <?php include('config.php'); ?>
 
-		<center><font size="6">Tambah Data</font></center>
+		<center><font size="6">Tambah Data Matakuliah</font></center>
 		<hr>
 		<?php
 		if(isset($_POST['submit'])){
@@ -50,7 +50,7 @@
 					<select name="Program_Studi" class="form-control" required>
 						<option value="">Pilih Keterangan</option>
 						<option value="Wajib">Wajib</option>
-						<option value="Bebas">Bebas</option>
+						<option value="Pilihan Bebas">Pilihan Bebas</option>
 					</select>
 				</div>
 			</div>

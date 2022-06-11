@@ -31,7 +31,7 @@
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
             <center>
-            &nbsp; <a href="index.php" class="fa fa-mortar-board fa-2x" style="color:#fff;"><span><font size="4.95" color="white" face="Helvetica Neue"> SISTEM INFORMASI PERWALIAN</font></span></a>
+            &nbsp; <a href="index.php" class="fa fa-mortar-board fa-2x" style="color:#fff;"><span><font size="4.95" color="white" face="Helvetica Neue"> TEMALI</font></span></a>
             </center>
             </div>
 

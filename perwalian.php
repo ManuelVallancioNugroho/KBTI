@@ -38,6 +38,8 @@
       <th scope="col">Dosen</th>
       <th scope="col">Tanggal Pelaksanaan</th>
       <th scope="col">Link</th>
+      <th scope="col">Meeting ID</th>
+      <th scope="col">Passcode</th>
       <th scope="col">Waktu</th>
     </tr>
   </thead>
@@ -47,14 +49,27 @@
       <td>Katon Wijana, S.Kom, M.T.</td>
       <td>19/01/2022</td>
       <td><a href="https://meet.google.com/duw-bync-bqj">https://meet.google.com/duw-bync-bqj</a></td>
+      <td>-</td>
+      <td>-</td>
       <td>10.00 WIB</td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Budi Sutedjo DO, S.Kom, M.M.</td>
       <td>19/01/2022</td>
-      <td><a href="https://meet.google.com/asg-vsru-nyz">https://meet.google.com/asg-vsru-nyz</a></td>
+      <td><a href="https://zoom.us/j/3748183055?pwd=ZWVTY1lyTjVQVDhRVGExek9ENnlQUT09">https://zoom.us/j/3748183055?pwd=ZWVTY1lyTjVQVDhRVGExek9ENnlQUT09</a></td>
+      <td>374 818 3055</td>
+      <td>7Cv4Rt</td>
       <td>11.00 WIB</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Jong Jek Siang, Drs, M.Sc</td>
+      <td>19/01/2022</td>
+      <td><a href="https://meet.google.com/sgz-qcgg-apj">https://meet.google.com/sgz-qcgg-apj</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>12.00 WIB</td>
     </tr>
    
   </tbody>

@@ -2,7 +2,7 @@
 
 
 	<div class="container" style="margin-top:20px">
-		<center><font size="6">Edit Data</font></center>
+		<center><font size="6">Edit Data Matakuliah</font></center>
 
 		<hr>
 
