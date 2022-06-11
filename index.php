@@ -1,3 +1,15 @@
+<?php 
+ 
+session_start();
+ 
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
+
+ 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,7 +56,8 @@
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>Mahasiswa</h2>
+                <h2><?php echo "" . $_SESSION['username'] ."". ""; ?>
+                  </a></h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -105,7 +118,7 @@
               <ul class=" navbar-right">
                 <li class="nav-item dropdown open" >
                   <a href="#" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/images/smile.jpg" alt="">Admin
+                    <img src="assets/images/smile.jpg" alt=""><?php echo "<h9> " . $_SESSION['username'] ."". "</h9>"; ?>
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item"  href="#"> Profile</a>
