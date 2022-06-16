@@ -6,7 +6,7 @@ if (!isset($_SESSION['username'])) {
     header("Location: login.php");
 }
 
- 
+
 ?>
 
 
@@ -56,7 +56,7 @@ if (!isset($_SESSION['username'])) {
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2><?php echo "" . $_SESSION['username'] ."". ""; ?>
+                <h2><?php echo "" . $_SESSION['email'] ."". ""; ?>
                   </a></h2>
               </div>
             </div>
@@ -118,12 +118,12 @@ if (!isset($_SESSION['username'])) {
               <ul class=" navbar-right">
                 <li class="nav-item dropdown open" >
                   <a href="#" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/images/smile.jpg" alt=""><?php echo "<h9> " . $_SESSION['username'] ."". "</h9>"; ?>
+                    <img src="https://ssat.ukdw.ac.id/_photos/informasi/<?php echo $_SESSION['email'] ?>.jpg" alt=""><?php echo "<h9>Welcome, " . $_SESSION['username'] ."!". "</h9>"; ?>
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="#"> Profile</a>
+                    <a class="dropdown-item"  href="profile.php"> Profile</a>
                       <a class="dropdown-item"  href="#">
-                        <span class="badge bg-red pull-right">50%</span>
+                      
                         <span>Settings</span>
                       </a>
                     <a class="dropdown-item"  href="logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a>

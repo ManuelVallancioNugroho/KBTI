@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
                 echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
             }
         } else {
-            echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
+            echo "<script>alert('Woops! Nim Sudah Terdaftar.')</script>";
         }
          
     } else {
@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
                 <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
             </div>
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                <input type="text" placeholder="Nim" name="email" value="<?php echo $email; ?>" required>
             </div>
             <div class="input-group">
                 <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>

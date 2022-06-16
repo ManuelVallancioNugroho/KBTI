@@ -9,7 +9,15 @@ session_start();
 if (isset($_SESSION['username'])) {
     header("Location: index.php");
 }
- 
+if (isset($_SESSION['email'])) {
+    header("Location: index.php");
+}
+if (isset($_SESSION['email'])) {
+    header("Location: profile.php");
+} 
+if (isset($_SESSION['password'])) {
+    header("Location: profile.php");
+} 
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $password = md5($_POST['password']);
@@ -19,6 +27,8 @@ if (isset($_POST['submit'])) {
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
+        $_SESSION['email'] = $row['email'];
+        $_SESSION['password'] = $row['password'];
         header("Location: index.php");
     } else {
         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
@@ -48,7 +58,7 @@ if (isset($_POST['submit'])) {
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                <input type="text" placeholder="Nim" name="email" value="<?php echo $email; ?>" required>
             </div>
             <div class="input-group">
                 <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
